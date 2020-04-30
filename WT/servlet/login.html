@@ -1,0 +1,61 @@
+
+
+
+<!DOCTYPE html>
+
+<!--Design and Develop an Student Registration and Login Form using HTML, CSS.
+
+Following fields should be used:
+
+Login Form:
+
+Username, Password, Check box for remembering the password, Sign In Button, Reset Button, Forgot Password Link, Hyperlink to Registration Page
+
+Registration Form:
+
+Username, Password, Firstname, Lastname, Gender(radio buttons), Email, Mobile, Class(Drop down select), Department(Drop down select), Age, Address(Text Area), Subjects(Check Boxes), Register Button, Reset Button, Hyperlink to Login Form.-->
+
+
+
+
+<html>
+<head>
+	<title>Login Form</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="wb.css">
+</head>
+<body bgcolor="aqua">
+    <div>
+
+	 	<h1 align="center" ><font color="red">LIBRARY MANAGEMENT SYSTEM</font>
+
+		</h1>
+		<hr>
+		<h2 align="center">
+			Login Form
+		</h2>
+        <form action="login" method="post">
+        <div class="row">
+        <div class="col-20"><label>Username:</label></div>
+		<div class="col-80"><input type="text" name="username" placeholder="Enter username" required></div>
+        </div>
+
+		<div class="row">
+		<div class="col-20"><label>Password:</label></div>
+		<div class="col-80"><input type="password" name="password" placeholder="Enter password" required></div>
+		</div>
+
+		<input type="submit" value="Sign In">
+
+		
+		<br>
+		
+		
+            <a href="register.html">Create Account</a>
+	</form>
+    </div>
+
+
+</body>
+</html>

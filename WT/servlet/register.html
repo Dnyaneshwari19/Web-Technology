@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--
+Registration Form:
+
+Username, Password, Firstname, Lastname, Gender(radio buttons), Email, Mobile, Class(Drop down select), Department(Drop down select), Age, Address(Text Area), Subjects(Check Boxes), Register Button, Reset Button, Hyperlink to Login Form.-->
+
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	
+    <link rel="stylesheet" href="wb2.css">
+		
+</head>
+<body bgcolor="aqua">
+
+	<h2 align="center"><b><u>REGISTRATION FORM</u></b></h2>
+	<hr>
+    <div><form action="register" method="post">
+    <div class="row">
+        <div class="col-20"><label>Username:</label></div>
+        <div class="col-80"><input type="Text" id="usnm" name="username" placeholder="Enter username" checked></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Password:</label></div>
+        <div class="col-80"><input type="Password" id="pswd" name="password" placeholder="Enter password" ></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Firstname:</label></div>
+        <div class="col-80"><input type="Text" id="fn" name="firstname" placeholder="Enter firstname" ></div>
+    </div>
+
+	<div class="row">
+        <div class="col-20"><label>Lastname:</label></div>
+        <div class="col-80"><input type="Text" id="ln" name="lastname" placeholder="Enter lastname" ></div>
+    </div>
+
+    <div class="row">
+	<label>Gender:</label><br>
+	<input type="radio" name="gender" value="Male">
+	<label>Male</label><br>
+	<input type="radio" name="gender" value="Female">
+	<label>Female</label>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Email:</label></div>
+        <div class="col-80"><input type="Email" id="em" name="email" placeholder="Enter email id" ></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Mobile:</label></div>
+        <div class="col-80"><input type="Mobile" id="mb" name="mobile" placeholder="Enter mobile number" ></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Class:</label></div>
+	    <div class="col-80"><select id="ide" name="clas">
+		<option value="1">FE</option>
+		<option value="2">SE</option>
+		<option value="3">TE</option>
+		<option value="4">BE</option>
+        </select></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Department:</label></div>
+	    <div class="col-80"><select>
+		<option>COMPUTER</option>
+		<option>ELECTRICAL</option>
+		<option>IT</option>
+		<option>MECHANICAL</option>
+        </select></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Age:</label></div>
+        <div class="col-80"><input type="number" name="age" ></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Address:</label></div>
+        <div class="col-80"><textarea placeholder="Enter address" name="address" ></textarea></div>
+    </div>
+
+    <div class="row">
+        <div class="col-20"><label>Subjects:</label></div>
+
+	<div class="col-80"><input type="checkbox" value="OOP" name="subject" align="center" required>
+        <label>OOP</label></div>
+
+	<div class="col-80"><input type="checkbox" value="PPL" name="subject">
+        <label>PPL</label></div>
+
+	<div class="col-80"><input type="checkbox" value="MP" name="subject">
+        <label>MP</label></div>
+
+	<div class="col-80"><input type="checkbox" value="DAA" name="subject">
+        <label>DAA</label></div>
+    </div>
+
+	<input type="submit" value="Register">
+	<br>
+	<a href="login.html">Login Form Link</a>
+</form></div>
+</body>
+</html>
